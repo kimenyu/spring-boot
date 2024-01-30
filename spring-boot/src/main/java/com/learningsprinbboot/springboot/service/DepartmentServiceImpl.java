@@ -4,6 +4,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Objects;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import com.learningsprinbboot.springboot.entity.Department;
@@ -29,6 +30,7 @@ public class DepartmentServiceImpl implements DepartmentService{
     @Override
     public Department fetchById(Long departmentId) {
         return departmentRepository.findById(departmentId).get();
+
     }
 
     @Override
